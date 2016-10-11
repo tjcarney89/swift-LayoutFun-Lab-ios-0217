@@ -10,15 +10,16 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    let redView = UIView(frame: CGRectZero)
-    let orangeView = UIView(frame: CGRectZero)
-    let yellowView = UIView(frame: CGRectZero)
-    let greenView = UIView(frame: CGRectZero)
-    let blueView = UIView(frame: CGRectZero)
+
+    let redView = UIView(frame: CGRect.zero)
+    let orangeView = UIView(frame: CGRect.zero)
+    let yellowView = UIView(frame: CGRect.zero)
+    let greenView = UIView(frame: CGRect.zero)
+    let blueView = UIView(frame: CGRect.zero)
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UIColor.grayColor()
+        view.backgroundColor = UIColor.gray
         turnOffAutoResizingOnAllViews()
         setupTheConstraints()
         setupColors()
@@ -49,10 +50,10 @@ extension ViewController {
 extension ViewController {
     
     func setupColors() {
-        redView.backgroundColor = UIColor.redColor()
-        orangeView.backgroundColor = UIColor.orangeColor()
-        yellowView.backgroundColor = UIColor.yellowColor()
-        greenView.backgroundColor = UIColor.greenColor()
-        blueView.backgroundColor = UIColor.blueColor()
+        redView.backgroundColor = UIColor.red
+        orangeView.backgroundColor = UIColor.orange
+        yellowView.backgroundColor = UIColor.yellow
+        greenView.backgroundColor = UIColor.green
+        blueView.backgroundColor = UIColor.blue
     }
 }

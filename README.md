@@ -3,7 +3,7 @@
 ![](http://i.imgur.com/OYnM6LR.jpg?1)
 
 > The best thing for being sad," replied Merlin, beginning to puff and blow, "is to learn something. That's the only thing that never fails. You may grow old and trembling in your anatomies, you may lie awake at night listening to the disorder of your veins, you may miss your only love, you may see the world about you devastated by evil lunatics, or know your honour trampled in the sewers of baser minds. There is only one thing for it then — to learn. Learn why the world wags and what wags it. That is the only thing which the mind can never exhaust, never alienate, never be tortured by, never fear or distrust, and never dream of regretting. Learning is the only thing for you. Look what a lot of things there are to learn. -[T.H. White](https://en.wikipedia.org/wiki/T._H._White)
- 
+
 
 # Learning Objectives
 
@@ -22,11 +22,11 @@ Locating the `ViewController.swift` file you will find that there are some insta
 First, lets look at the instance properties provided.
 
 ```swift
-    let redView = UIView(frame: CGRectZero)
-    let orangeView = UIView(frame: CGRectZero)
-    let yellowView = UIView(frame: CGRectZero)
-    let greenView = UIView(frame: CGRectZero)
-    let blueView = UIView(frame: CGRectZero)
+  let redView = UIView(frame: CGRect.zero)
+  let orangeView = UIView(frame: CGRect.zero)
+  let yellowView = UIView(frame: CGRect.zero)
+  let greenView = UIView(frame: CGRect.zero)
+  let blueView = UIView(frame: CGRect.zero)
 ```
 
 There are five `UIView` objects here. Each one  has no frame, not only that.. each one isn't added to another `UIView` instance which means they aren't displayed anywhere.
@@ -36,7 +36,7 @@ The `viewDidLoad()` method has some method calls in it:
 ```swift
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UIColor.grayColor()
+        view.backgroundColor = UIColor.gray
         turnOffAutoResizingOnAllViews()
         setupTheConstraints()
         setupColors()
