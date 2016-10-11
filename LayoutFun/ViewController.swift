@@ -30,8 +30,6 @@ class ViewController: UIViewController {
 extension ViewController {
     
     func setupTheConstraints() {
-        
-        
         // TODO: Create all the constraints (in code) for the various views
         
         
